@@ -2,12 +2,12 @@
   "name": "nodejs-complete-guide",
   "version": "1.0.0",
   "description": "Complete Node.js Guide",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production MONGO_USER=bewithshakir MONGO_PASSWORD=shsamring2_432014 MONGO_DEFAULT_DATABASE=shop STRIPE_SECURE_KEY=sk_test_51MxmePSIC6C7sX5cJrXSfMmvhfjNpaJT9pAEechMA9bAQsWkQN9ks95ZY5HrQ7qxkllStykDq0Deqs0FKU7qZVYQ00lxi9up6g node app.js",
-    "start-server": "node app.js",
-    "start:dev": "nodemon app.js"
+    "start-server": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
