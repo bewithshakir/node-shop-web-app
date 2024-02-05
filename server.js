@@ -64,7 +64,12 @@ const fileFilter = (req, file, cb) => {
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-
+// app.use((req, res, next)=> {
+//   res.setHeader('Access-Control-Allow-Origin', "*");
+//   res.setHeader('Access-Control-Allow-Methods', '*');
+//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//   next()
+// })
 app.use(helmet());
 app.use(compression());
 app.use(morgan('tiny'));
